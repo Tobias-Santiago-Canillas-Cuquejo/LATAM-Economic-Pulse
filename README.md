@@ -17,12 +17,6 @@ Star Schema Design: Fact table (dataset_macro_latam) connected via a 1:N relatio
 Dedicated _Medidas table for clean measure isolation.
 VAR/RETURN logic used for dynamic period filtering to target the most recent year (MAX(Dim_Calendario[Año])).
 Re-scaled percentage calculations using DIVIDE functions to maintain strict scaling accuracy.
-Repository Structure
-─ assets/    --> Visual assets, screenshots, and exported PDF documentation
-─ pbix/      --> Lightweight Power BI Template (.pbit)
-─ scripts/   --> R scripts for automated data extraction
-─ README.md  --> Project overview
-
 
 How to Replicate
 Run R Pipeline: Execute scripts/01_extraccion_datos.R to update the macroeconomic dataset directly from the World Bank API.
